@@ -7,7 +7,7 @@
         "start": "parcel index.html --open --port 3000",
         "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx|js|jsx|json|css|md|mdx|html)\"",
         "format": "npm run prettier -- --write",
-        "lint": "eslint --ignore-path .gitignore .",
+        "lint": "eslint --ignore-path .gitignore \"**/*.+(js|jsx)\"",
         "check-format": "npm run prettier -- --list-different",
         "validate": "npm run lint && npm run check-format"
     },
