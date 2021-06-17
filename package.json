@@ -7,12 +7,17 @@
         "start": "parcel index.html --open --port 3000",
         "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx|js|jsx|json|css|md|mdx|html)\"",
         "format": "npm run prettier -- --write",
-        "check-format": "npm run prettier -- --list-different"
+        "lint": "eslint --ignore-path .gitignore .",
+        "check-format": "npm run prettier -- --list-different",
+        "validate": "npm run lint && npm run check-format"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "eslint": "^7.28.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-react": "^7.24.0",
         "parcel-bundler": "^1.12.5",
         "prettier": "^2.3.1"
     },
